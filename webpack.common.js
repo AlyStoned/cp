@@ -30,7 +30,6 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     outputPath: function(url, resourcePath, context) {
-                        console.log(url, resourcePath);
                         const basename = path.basename(resourcePath);
                         const dirname = path.basename(path.dirname(resourcePath));
                         return path.join('fonts', dirname, basename);

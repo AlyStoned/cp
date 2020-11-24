@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
-      // recognize device
-      if (!(matchMedia('(hover: none)').matches)) {
-          document.documentElement.classList.add('can-hover');
-      }
+    // recognize device
+    if (!(matchMedia('(hover: none)').matches)) {
+      document.documentElement.classList.add('can-hover');
+    }
   </script>
 
   <!-- Memberstack -->
@@ -30,57 +30,122 @@
     </header>
 
     <main id="app-main">
-      <div class="container">
-        <div class="main-inner">
-          <img src="/img/preview.jpg" alt="preview">
+      <div class="faq-wrapper">
+        <div class="container">
+          <div class="faq-inner center-text">
+            <img src="/images/preview.jpg" alt="preview">
 
-          <div class="text-container center-text">
-            <dl class="faq">
-              <dt class="faq-question">
-                what are expert picks?
-              </dt>
-              <dd class="faq-answer">
-                a daily collection of jorge nunes' best basketball bets.
-              </dd>
+            <div class="text-container">
+              <dl class="faq">
+                <dt class="faq-question">
+                  what are expert picks?
+                </dt>
+                <dd class="faq-answer">
+                  a daily collection of jorge nunes' best basketball bets.
+                </dd>
 
-              <dt class="faq-question">
-                who is jorge nunes?
-              </dt>
-              <dd class="faq-answer">
-                jorge nunes is an 12 year profes-sional nba & ncaab handicapper. his winning percentages rank among the <span class="emphasis">best</span> in the world in the past 2 seasons. he's also a former professional european basketball player.
-              </dd>
+                <dt class="faq-question">
+                  who is jorge nunes?
+                </dt>
+                <dd class="faq-answer">
+                  jorge nunes is an 12 year profes-sional nba & ncaab handicapper. his winning percentages rank among the <span class="emphasis">best</span> in the world in the past 2 seasons. he's also a former professional european basketball player.
+                </dd>
 
-              <dt class="faq-question">
-                what is the "profit or refund" policy?
-              </dt>
-              <dd class="faq-answer">
-                yes, you read that correctly. if you purchase a daily, weekly, or monthly subscription and jorge's picks don't make you money, your package will be fully refunded.
-              </dd>
+                <dt class="faq-question">
+                  what is the "profit or refund" policy?
+                </dt>
+                <dd class="faq-answer">
+                  yes, you read that correctly. if you purchase a daily, weekly, or monthly subscription and jorge's picks don't make you money, your package will be fully refunded.
+                </dd>
 
-              <dt class="faq-question">
-                how and when do i receive picks?
-              </dt>
-              <dd class="faq-answer">
-                after signing up, you will gain access to our picks page.
-              </dd>
+                <dt class="faq-question">
+                  how and when do i receive picks?
+                </dt>
+                <dd class="faq-answer">
+                  after signing up, you will gain access to our picks page.
+                </dd>
 
-              <dt class="faq-question">
-                how many picks do i get a day?
-              </dt>
-              <dd class="faq-answer">
-                expect 3-5 picks per day. we guar-antee at least 12 picks per week.
-              </dd>
+                <dt class="faq-question">
+                  how many picks do i get a day?
+                </dt>
+                <dd class="faq-answer">
+                  expect 3-5 picks per day. we guar-antee at least 12 picks per week.
+                </dd>
 
-              <dt class="faq-question">
-                what if i have more questions?
-              </dt>
-              <dd class="faq-answer">
-                dm @thebigslip on instagram and we’ll gladly assist you.
-              </dd>
-            </dl>
+                <dt class="faq-question">
+                  what if i have more questions?
+                </dt>
+                <dd class="faq-answer">
+                  dm
+                  <a class="link"
+                     target="_blank"
+                     title="thebigslip"
+                     href="https://www.instagram.com/thebigslip/">
+                    @thebigslip</a>
+                  on instagram and we’ll gladly assist you.
+                </dd>
+              </dl>
+            </div>
+
+            <img class="graph" src="/images/graph.png" alt="graph">
           </div>
+        </div>
+      </div>
 
-          <img src="/img/graph.png" alt="graph">
+      <div class="plans-wrapper">
+        <div class="container">
+          <div class="plans list">
+            <div class="plan">
+              <div class="plan-name">
+                Daily subscription
+              </div>
+              <div class="plan-price">
+                $0
+              </div>
+              <button class="btn plan-btn" type="button">
+                sign-up
+              </button>
+              <ul class="plan-features">
+                <li class="plan-feature">Cool features here</li>
+                <li class="plan-feature">Woah checkout this feature</li>
+                <li class="plan-feature">Nice! A feature</li>
+              </ul>
+            </div>
+
+            <div class="plan">
+              <div class="plan-name">
+                Weekly plan
+              </div>
+              <div class="plan-price">
+                $19
+              </div>
+              <button class="btn plan-btn" type="button">
+                sign-up
+              </button>
+              <ul class="plan-features">
+                <li class="plan-feature">Cool features here</li>
+                <li class="plan-feature">Woah checkout this feature</li>
+                <li class="plan-feature">Nice! A feature</li>
+              </ul>
+            </div>
+
+            <div class="plan">
+              <div class="plan-name">
+                Monthly plan
+              </div>
+              <div class="plan-price">
+                $79
+              </div>
+              <button class="btn plan-btn" type="button">
+                sign-up
+              </button>
+              <ul class="plan-features">
+                <li class="plan-feature">Cool features here</li>
+                <li class="plan-feature">Woah checkout this feature</li>
+                <li class="plan-feature">Nice! A feature</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
