@@ -1,0 +1,111 @@
+@import "deps";
+//@import "fonts";
+
+
+// reset
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  img {
+    border: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
+
+html {
+  font-size: 14px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  color: $text-color;
+  font-family: "Gobold", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#app-page {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: $dark-gray;
+  @include for-tablet-landscape-up() {
+    display: flex;
+  }
+}
+
+#app-content {
+  display: flex;
+  min-height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  @include for-tablet-landscape-up() {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+#app-header {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+  width: 100%;
+}
+
+#app-main {
+  box-sizing: border-box;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+}
+
+.container {
+  width: 100%;
+  max-width: $grid-max-width;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+
+  @include for-tablet-portrait-up() {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
+
+.text-container {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emphasis, .link {
+  color: $green;
+}
+
+.center-text {
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+@import "../deps";
+
+
+.main-inner {
+
+  .faq {
+    margin-top: 14px;
+    text-transform: uppercase;
+    line-height: 1.28571429em;
+
+    .faq-question {
+      display: inline-block;
+      font-size: 2em;
+      margin: calc(2rem - .14285714em) 0 1rem;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .faq-answer {
+      color: $gray;
+      font-weight: 300;
+      font-size: 1.6em;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+//.plans {
+//  .plan {
+//    @include media_interval(0, $media-tablet-portrait) {
+//      @include flex-columns(2, 20px, 20px);
+//    }
+//    @include media_interval($media-tablet-portrait, $media-tablet-landscape) {
+//      @include flex-columns(2, 30px, 30px);
+//    }
+//    @include media_interval($media-tablet-landscape, $media-desktop) {
+//      @include flex-columns(3, 40px, 40px);
+//    }
+//    @include media_interval($media-desktop, 0) {
+//      @include flex-columns(3, 50px, 50px);
+//    }
+//  }
+//}
+
+//.empty-label {
+//  margin-top: 140px;
+//  max-width: 252px;
+//  display: inline-block;
+//  line-height: 1.3;
+//  font-size: rem(17);
+//  @include for-tablet-portrait-up() {
+//    max-width: 483px;
+//    font-size: rem(20);
+//  }
+//}

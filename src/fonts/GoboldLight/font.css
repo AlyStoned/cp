@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Gobold';
+	font-weight: 300;
+	font-style: normal;
+	src: url('/fonts/GoboldLight/gobold_light.woff2') format('woff2'),
+         url('/fonts/GoboldLight/gobold_light.woff') format('woff'),
+         url('/fonts/GoboldLight/gobold_light.ttf') format('truetype');
+}
