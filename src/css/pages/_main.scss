@@ -3,6 +3,7 @@
 
 .faq-wrapper {
 
+
   .faq-inner {
     background-color: $light-gray;
     border-radius: 10px;
@@ -91,7 +92,7 @@
       }
 
       .plan-price {
-        margin-top: 20px;
+        margin-top: 25px;
         margin-bottom: 25px;
         @include font_size(55px, 70px);
         font-weight: 700;
