@@ -1,5 +1,5 @@
 {
-  "name": "cp",
+  "name": "expertpicks",
   "version": "0.0.1",
   "description": "CP",
   "main": "index.js",
@@ -62,11 +62,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aly-org/cp.git"
+    "url": "https://github.com/aly-org/expertpicks.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://fantasy.frankmichaelsmith.com",
+  "homepage": "https://aly-org.github.io/expertpicks/",
   "dependencies": {
     "axios": "^0.19.2",
     "dayjs": "^1.8.34"
