@@ -2,23 +2,13 @@
 
 
 .faq-wrapper {
-
+  @include font_title;
 
   .faq-inner {
-    background-color: $light-gray;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
     padding-bottom: 20px;
-    margin-left: -$grid-gutter-width / 2;
-    margin-right: -$grid-gutter-width / 2;
 
-    @include for-tablet-portrait-up() {
-      margin-left: -$grid-gutter-width;
-      margin-right: -$grid-gutter-width;
-    }
-    @include for-tablet-landscape-up() {
-      margin-left: 0;
-      margin-right: 0;
+    & > img {
+      width: 100%;
     }
 
     .faq {
@@ -46,7 +36,6 @@
 
     .graph {
       max-width: 600px;
-      width: 100%;
 
       @include media_interval($media-tablet-landscape, 0) {
         margin-left: -100px;
@@ -57,7 +46,7 @@
 
 .plans-wrapper {
   margin-top: 100px;
-
+  @include font_title;
 
   .plans {
     @include hpad(10px);

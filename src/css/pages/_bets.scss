@@ -1,0 +1,84 @@
+@import "../deps";
+
+
+.bets-wrapper {
+
+  .bets-inner {
+    @include vpad(40px);
+    @include font-size(16px, 20px);
+
+    .text-container {
+      > *:first-child {
+        margin-top: 0;
+      }
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
+
+      h2, h3 {
+        font-weight: bold;
+        @include font_title;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 1em 0 0.4em;
+        @include media_interval($media-tablet-portrait, 0) {
+          @include font-size(34px, 40px);
+        }
+        @include media_interval(0, $media-tablet-portrait) {
+          @include font-size(28px);
+          margin: 0.6em 0 0.2em;
+        }
+      }
+
+      h3 {
+        margin: 1.1em 0 0.6em;
+        @include font-size(24px, 33.6px);
+        @include media_interval($media-tablet-portrait, $media-tablet-landscape) {
+          @include font-size(22px);
+        }
+        @include media_interval(0, $media-tablet-portrait) {
+          @include font-size(20px);
+          margin: 0.8em 0 0.4em;
+        }
+      }
+
+      p {
+        margin-bottom: 12px;
+      }
+
+      ul, ol {
+        margin: 1.8125em 0 1.875em;
+
+        @include media_interval(0, $media-tablet-landscape) {
+          margin: 1.2125em 0 1.275em;
+        }
+
+        li {
+          position: relative;
+          margin-bottom: 0.8em;
+          z-index: 1;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      ul > li {
+        padding-left: 1.4em;
+
+        &:before {
+          content: '●';
+          color: $white;
+          position: absolute;
+          left: 0.3em;
+          transform-origin: 50% 50%;
+          transform: scale(0.58);
+        }
+      }
+    }
+  }
+}

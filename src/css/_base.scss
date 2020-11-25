@@ -10,7 +10,7 @@ html, body {
 body {
   overflow-x: hidden;
   color: $text-color;
-  font-family: "Gobold", Helvetica, Arial, sans-serif;
+  @include font_default;
   font-size: 0;
   line-height: 1;
 }
@@ -28,7 +28,6 @@ body {
   display: flex;
   min-height: inherit;
   flex-direction: column;
-  justify-content: center;
   @include for-tablet-landscape-up() {
     flex-grow: 1;
     flex-basis: 0;
@@ -60,6 +59,23 @@ body {
   @include for-tablet-portrait-up() {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
+  }
+}
+
+.grey-inner {
+  background-color: $light-gray;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+  margin-left: -$grid-gutter-width / 2;
+  margin-right: -$grid-gutter-width / 2;
+
+  @include for-tablet-portrait-up() {
+    margin-left: -$grid-gutter-width;
+    margin-right: -$grid-gutter-width;
+  }
+  @include for-tablet-landscape-up() {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

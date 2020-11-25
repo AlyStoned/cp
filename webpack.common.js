@@ -54,7 +54,15 @@ module.exports = {
     },
     plugins: [
         new webpack.ProgressPlugin(),
-        new HtmlWebpackPlugin({template: './src/index.html'}),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'bets.html',
+            template: './src/bets.html',
+            minify: false
+        }),
         new FaviconsWebpackPlugin({
             logo: path.resolve(config.SOURCE_DIR, 'img/favicon.png'),
             favicons: {

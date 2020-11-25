@@ -1,0 +1,12 @@
+
+@mixin font_default() {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin font_condensed() {
+  font-family: "RobotoCondensed", sans-serif;
+}
+
+@mixin font_title() {
+  font-family: "Gobold", Helvetica, Arial, sans-serif;
+}
