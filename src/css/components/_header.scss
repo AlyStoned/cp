@@ -20,6 +20,7 @@
       @include font_condensed;
       @include font-size(16px, 20px);
       font-weight: 700;
+      color: $white;
 
       &:hover {
         color: $green;
