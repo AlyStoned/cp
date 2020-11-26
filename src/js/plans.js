@@ -4,9 +4,12 @@ import { winWidth, rared } from './utils';
 
 export function plansInit() {
     const plans = document.querySelector('.plans');
-    const swiperContainer = plans.querySelector('.swiper-container');
+    if (!plans) {
+        return
+    }
 
-    if (!plans || !swiperContainer) {
+    const swiperContainer = plans.querySelector('.swiper-container');
+    if (!swiperContainer) {
         return
     }
 
