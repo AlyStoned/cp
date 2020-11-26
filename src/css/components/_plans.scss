@@ -1,0 +1,84 @@
+@import "../deps";
+
+
+$plans_wide: 1045px;
+$plans_tablet: $media-tablet-landscape;
+$plans_mobile: $media-tablet-portrait;
+
+
+.plans-wrapper {
+  margin-top: 100px;
+
+  @include for-phone-only() {
+    margin-top: $grid-gutter-width;
+  }
+
+  .plans {
+    position: relative;
+    @include hpad(10px);
+
+    //@include media_interval($plans_tablet, $plans_wide) {
+    //  max-width: 860px;
+    //}
+    @include media_interval($plans_mobile, $plans_tablet) {
+      max-width: 580px;
+    }
+    @include media_interval(0, $plans_mobile) {
+      max-width: 248px;
+    }
+
+    .swiper-container {
+      overflow: visible;
+
+      &:not(.swiper-container-initialized) {
+        .swiper-slide {
+          @include media_interval($plans_wide, 0) {
+            @include flex-columns(3, 50px);
+          }
+          @include media_interval($plans_tablet, $plans_wide) {
+            @include flex-columns(3, 30px);
+          }
+          @include media_interval($plans_mobile, $plans_tablet) {
+            @include flex-columns(2, 20px);
+          }
+        }
+      }
+    }
+
+    .plan {
+      padding: 30px 40px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background-color: $white;
+      box-shadow: 0 10px 25px 3px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      text-transform: uppercase;
+      @include font_size(16px, 32px);
+      font-weight: 300;
+
+      .plan-name {
+        font-weight: 700;
+      }
+
+      .plan-price {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        @include font_size(60px, 70px);
+        font-weight: 700;
+        color: $green;
+      }
+
+      .plan-btn {
+        margin-top: 14px;
+        margin-bottom: 20px;
+      }
+
+      .plan-features {
+
+        .plan-feature {
+          @include font_size(13px, 26px);
+        }
+      }
+    }
+  }
+}

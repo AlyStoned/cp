@@ -92,15 +92,10 @@ body {
   margin-left: auto;
 }
 
-.list {
-  display: flex;
-  flex-wrap: wrap;
+.center-text {
+  text-align: center;
 }
 
 .emphasis, .link {
   color: $green;
-}
-
-.center-text {
-  text-align: center;
 }
