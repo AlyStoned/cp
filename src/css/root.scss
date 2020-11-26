@@ -1,4 +1,4 @@
-// third party
+// vendor patches
 @import "patches/memberstack";
 
 // core
@@ -7,7 +7,7 @@
 // components
 @import
   "components/header",
-  "components/field",
+  //"components/field",
   "components/button",
   "pages/main",
   "pages/bets";

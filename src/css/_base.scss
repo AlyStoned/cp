@@ -44,6 +44,11 @@ body {
   box-sizing: border-box;
   padding-top: $grid-gutter-width * 2;
   padding-bottom: $grid-gutter-width * 2;
+
+  @include for-phone-only() {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+  }
 }
 
 .container {
