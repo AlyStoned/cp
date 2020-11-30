@@ -4,7 +4,7 @@
 .faq-wrapper {
 
   .faq-inner {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 
     & > img {
       width: 100%;
@@ -24,7 +24,6 @@
 
     .faq {
       margin-top: 20px;
-      text-transform: uppercase;
 
       .faq-question {
         display: inline-block;
@@ -61,7 +60,7 @@
 
     .graph {
       max-width: 600px;
-      margin-top: 15px;
+      margin-top: 45px;
       @include hpad(20px);
 
       @include media_interval($media-tablet-landscape, 0) {
