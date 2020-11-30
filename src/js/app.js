@@ -7,8 +7,9 @@ import 'swiper/swiper-bundle.css';
 import "css/root.scss";
 
 // images
-import "img/preview.png";
+import "img/logo.png";
+import "img/preview.jpg";
 import "img/graph.png";
 
 
-plansInit()
+plansInit();

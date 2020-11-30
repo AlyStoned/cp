@@ -6,19 +6,24 @@
   .faq-inner {
     padding-bottom: 40px;
 
-    & > img {
-      width: 100%;
-    }
-
-    .logo {
-      max-width: 600px;
+    .logo > img {
       margin-top: 80px;
       margin-bottom: 40px;
       @include hpad(30px);
+      max-width: 600px;
+      width: 100%;
 
       @include for-phone-only() {
         margin-top: 40px;
         margin-bottom: 20px;
+      }
+    }
+
+    .preview {
+      margin-bottom: 40px;
+
+      @include for-phone-only() {
+        margin-bottom: 30px;
       }
     }
 
@@ -58,10 +63,11 @@
       }
     }
 
-    .graph {
-      max-width: 600px;
+    .graph > img {
       margin-top: 45px;
       @include hpad(20px);
+      max-width: 600px;
+      width: 100%;
 
       @include media_interval($media-tablet-landscape, 0) {
         margin-left: -100px;
