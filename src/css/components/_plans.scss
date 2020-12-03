@@ -79,6 +79,14 @@ $plans_mobile: $media-tablet-portrait;
           @include font_size(13px, 26px);
         }
       }
+
+      &.plan-emphasized {
+        background-color: $green;
+
+        .plan-price {
+          color: $white;
+        }
+      }
     }
   }
 }
