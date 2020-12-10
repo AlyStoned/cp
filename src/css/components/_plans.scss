@@ -89,4 +89,21 @@ $plans_mobile: $media-tablet-portrait;
       }
     }
   }
+
+  .plans-note {
+    margin-top: 80px;
+    color: $gray;
+    font-weight: 600;
+    @include font_size(22.4px, 28.8px);
+    letter-spacing: 1px;
+
+    @include media_interval($media-tablet-portrait, $media-tablet-landscape) {
+      @include font-size(20px);
+      margin-top: 60px;
+    }
+    @include media_interval(0, $media-tablet-portrait) {
+      @include font-size(18px);
+      margin-top: 45px;
+    }
+  }
 }
